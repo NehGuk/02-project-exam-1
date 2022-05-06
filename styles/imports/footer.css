@@ -1,0 +1,20 @@
+.footer {
+    background: var(--gray);
+    min-height: 200px;
+}
+
+.footer .small-text {
+    float: right;
+    padding: 70px 150px ;
+    
+}
+
+@media (max-width: 940px) {
+    .footer {
+        min-height: 200px;
+    }
+    
+    .footer .small-text {
+        padding: 70px 10px ;
+    }   
+}

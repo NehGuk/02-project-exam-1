@@ -1,0 +1,163 @@
+/* COLOUR PALETTE */
+:root {
+    --white: #FFF;
+    --offwhite: #FAFAFA;
+    --gray: #C7C7C7;
+    --red: #8F1B1B;
+    --dark: #402D2D;
+    --black: #000;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 40px;
+}
+
+h2 {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 40px;
+}
+
+h3 {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h4 {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--red);
+}
+
+.small-text {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.regular-text {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 22px;
+}
+
+.large-text {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 24px;
+    opacity: 80%;
+
+}
+
+.menu-text {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    font-weight: 300;
+    color: var(--dark);
+    opacity: 80%;
+}
+
+.menu-text-selected {
+    color: var(--dark);
+    opacity: 0%;
+}
+
+.tag-label {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    background: var(--red);
+    border-radius: 10px;
+    padding: 4px 10px;
+    color: var(--offwhite);
+    font-size: 14px;
+}
+
+.tag-label:hover {
+    opacity: 80%;
+}
+
+.cta {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--offwhite);
+    font-size: 22px;
+    background: var(--red);
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    border: 1px solid var(--offwhite);
+}
+
+.cta:hover {
+    color: var(--red);
+    background: var(--white);
+    border: 1px solid var(--red);
+    
+}
+
+/* LOGO */
+.logo {
+    margin-top: 20px;   
+}
+
+.logo-text {
+    /* font-family: kazuraki-sp2n, serif; */
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--dark);
+    display: inline;
+
+}
+
+hr {
+    color: var(--red);
+    
+}
+
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--offwhite);
+}
+
+
+
+
+
+@media (max-width: 940px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 10px;
+    }
+
+
+    .large-text {
+        font-size: 16px;    
+    }
+
+}
+

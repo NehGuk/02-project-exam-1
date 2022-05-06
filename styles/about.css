@@ -1,0 +1,35 @@
+@import url(/styles/imports/global.css);
+@import url(/styles/imports/nav.css);
+@import url(/styles/imports/footer.css);
+
+.main-grid {
+    /* border: 10px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 150px;
+}
+
+header {
+    /* border: 3px solid yellow; */
+}
+
+.content {
+    /* border: 3px solid blue; */
+}
+
+.title {
+    /* display: none; */
+    /* padding: 100px 150px 100px; */
+}
+
+@media (max-width: 940px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 100px 20px;        
+    }
+
+    .cta {
+        width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+@import url(/styles/imports/global.css);
+@import url(/styles/imports/nav.css);
+@import url(/styles/imports/footer.css);
+
+.main-grid {
+    /* border: 10px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 150px;
+}
+
+header {
+    /* border: 3px solid yellow; */
+}
+
+
+.image-container {
+    /* display: none; */
+    /* padding: 100px 150px 100px; */
+}
+
+.image-post {
+    /* display: none; */
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    object-fit: cover;
+}
+
+.content {
+    /* border: 3px solid blue; */
+}
+
+
+
+h2 {
+    margin-bottom: 50px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.tag-label {
+    display: inline-block;
+}
+
+
+@media (max-width: 940px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 100px 20px;        
+    }
+
+    .image-post {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .cta {
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+
+/* LOGO */
+.logo img {
+
+}
+
+.logo-text {
+    /* font-family: kazuraki-sp2n, serif; */
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--dark);
+    display: inline;
+
+}
+
+/* MENU */
+.menu {
+    display: inline-block;
+    float: right;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.menu-text {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--dark);
+    opacity: 80%;
+    padding-right: 50px;
+}
+
+.menu-text:hover {
+    /* color: var(--black); */
+    opacity: 40%;
+}
+
+.menu-text-selected {
+    color: var(--dark);
+    opacity: 0%;
+}
+
+#selected {
+    font-weight: 700;
+    opacity: 70%;
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: none;
+}
+
+
+
+@media (max-width: 940px) {
+nav {
+    /* display: none; */
+}
+
+.menu {
+    padding-right: 0;
+    padding-top: 70px;
+    display: none;
+    
+
+}
+
+.menu a {
+    display: block;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.hamburger-menu {
+    display: inline-block;
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+}
+
+}

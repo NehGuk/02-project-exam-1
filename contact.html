@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles/contact.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'tod2xni',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/index.html"><div class="logo"><img src="/assets/logo.png"></a>
+  <img class="hamburger-menu" src="/assets/icons/menu.png">    
+  <div class="menu">
+      <a class="menu-text" href="/index.html">Home</a>
+      <a class="menu-text" href="/blog.html">Blog</a>
+      <a class="menu-text" href="/about.html">About</a>
+      <a class="menu-text" id="selected" href="/contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="main-grid">
+  <!-- HEADER -->
+  <header>
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <form class="small-text">
+      
+      <label>Name</label><br>
+      <input><br>
+
+      <label>Email</label><br>
+      <input><br>
+
+      <label>Subject</label><br>
+      <input><br>
+
+      <label>Message</label><br>
+      <input><br>
+
+    </form>
+
+    <button class="cta" href="#">Submit</button>
+  </div>
+</div>
+<!-- FOOTER -->
+    <div class="footer">    
+        <p class="small-text">Henri Kugler | <strong>Project Exam 1</strong></p>
+    </div>
+
+</body>
+</html>
