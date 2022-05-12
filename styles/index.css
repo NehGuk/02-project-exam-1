@@ -25,7 +25,7 @@ padding: 0 150px 20px;
 
 .grid-item {
     /* background: var(--white); */
-    border: solid 1px var(--gray);
+    border: solid 2px var(--gray);
     border-radius: 10px;
     padding: 20px;
     min-height: 300px;
@@ -72,7 +72,7 @@ padding: 0 150px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0%;
+    opacity: 100%;
 }
 
 .arrow-right-container {

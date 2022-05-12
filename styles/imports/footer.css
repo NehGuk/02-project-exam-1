@@ -1,6 +1,7 @@
 .footer {
     background: var(--gray);
     min-height: 200px;
+    /* opacity: 50%; */
 }
 
 .footer .small-text {
@@ -15,6 +16,6 @@
     }
     
     .footer .small-text {
-        padding: 70px 10px ;
+        padding: 70px 10px;
     }   
 }
