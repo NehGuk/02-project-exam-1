@@ -11,6 +11,10 @@
 
 /* POSTS */
 
+.all-posts {
+    display: block;
+}
+
 .post-container {
     margin: 0 150px 50px;
     border: 2px solid var(--gray);
