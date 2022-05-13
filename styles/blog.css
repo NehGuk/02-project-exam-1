@@ -60,20 +60,23 @@
 }
 
 
-.load-more-link-container {
+/* LOAD MORE BUTTON */
+.load-more-button-container {
     text-align: center;
     margin-bottom: 150px;
 }
 
-.load-more-link {
+.load-more-button {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
     font-size: 22px;
     text-decoration: underline;
-    
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
-.load-more-link:hover {
+.load-more-button:hover {
     opacity: 70%;
 }
 
