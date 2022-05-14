@@ -16,7 +16,7 @@ async function getPost() {
     console.log(post.acf.topics[1].name);
     console.log(post.acf.topics[2].name); */
 
-    mainGrid.innerHTML = "<h1>Test</h1>";
+    mainGrid.innerHTML = "";
     
     
     function createHTMLpost() {
