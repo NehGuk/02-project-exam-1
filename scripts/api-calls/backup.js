@@ -64,15 +64,9 @@ async function createAllTags() {
         console.log(tag[t].name);
 
         tagContainer.innerHTML += `
-        <p class="tag-label">${tag[t].name}</p>
-            
-        
+            <p class="tag-label">${tag[t].name}</p>
         `;
-
     }
-
-    
-    
 }
 createAllTags();
 
@@ -106,3 +100,13 @@ async function createTags() {
 
 }
 createTags();
+
+
+
+/////// 
+
+<div>
+    <a class="tag-label" href="#">${post.acf.topics[0].name}</a>
+    <a class="tag-label" href="#">${post.acf.topics[1].name}</a>
+    <a class="tag-label" href="#">${post.acf.topics[2].name}</a>
+</div>
