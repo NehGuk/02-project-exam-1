@@ -41,6 +41,18 @@ hr {
     margin-top: 50px;
 }
 
+.author-name {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 20px;
+}
+
+.date {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 16px;
+}
+
 .tag-label {
     display: inline-block;
 }

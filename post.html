@@ -16,6 +16,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
+      <script defer src="/scripts/api-calls/post.js"></script>
 
 </head>
 <body>
@@ -34,14 +35,14 @@
 
 <div class="main-grid">
   <!-- HEADER -->
-  <header>
+  <!-- <header>
     <div class="image">
       <img class="image-post" src="/assets/images/aikido-2.jpg">
     </div>
-  </header>
+  </header> -->
 
   <!-- CONTENT -->
-  <div class="content">
+ <!--  <div class="content">
     <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h2>
     <p class="regular-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores 
@@ -54,11 +55,12 @@
       <p class="large-text"><strong>Author</strong></p>
       <br>
       <p class="small-text">Date</p>
-      <br>
-      <div>
+      <br> -->
+  
+      <!-- TAGS -->
+      <!-- <div class="tag-container">
         <p class="tag-label">Tag 1</p> <p class="tag-label">Tag 2</p> <p class="tag-label">Tag 3</p>
-      </div>
-    
+      </div> -->
   </div>
 </div>
 <!-- FOOTER -->

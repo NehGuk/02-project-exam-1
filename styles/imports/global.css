@@ -35,7 +35,9 @@ a {
 
 h4 {
     font-family: source-han-sans-cjk-ja, sans-serif;
+    font-size: 1.5em;
     color: var(--red);
+    margin-top: 2em;
 }
 
 .small-text {
@@ -49,7 +51,9 @@ h4 {
     color: var(--dark);
     font-size: 22px;
 }
+    
 
+}
 .large-text {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
