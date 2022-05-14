@@ -1,4 +1,4 @@
-const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,content,acf&per_page=99";
+const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,content,date,acf&per_page=99";
 const allPosts = document.querySelector(".all-posts");
 const postContainer = document.querySelector(".post-container");
 const loadMoreButton = document.querySelector("button.load-more-button");
@@ -22,6 +22,12 @@ async function getPosts() {
         for (let i = 0; i < 10; i++) {
             
             function createHTML() {
+                let date = new Date("2017-03-23");
+                let postDate = new Date(posts[i].date);
+                let postDateT = new Date(posts[i].date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
+
+                console.log(postDateT);
+                
                 allPosts.innerHTML += `
                     <div class="post-container">
                     <div class="image">
@@ -31,7 +37,8 @@ async function getPosts() {
                     <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                     </div>
                     <div class="summary">
-                    <p><span class="date">${posts[i].acf.date}</span></p>
+                    <p><span class="date">${postDateT}</span></p>
+                    
                     <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                     </div>
                     <div class="tags">
