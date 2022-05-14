@@ -44,7 +44,6 @@ async function getPosts() {
             }
             createHTML();
         }
-
     }
     catch(error) {
         console.log(`An error has occurred: ${error}`);
@@ -54,9 +53,7 @@ getPosts();
 
 // LOAD MORE BUTTON
 loadMoreButton.style.display = "inline-block";
-
 loadMoreButton.onclick = function() {
-
     async function getAllPosts() {
         try {
             const res = await fetch(urlPosts);
@@ -74,7 +71,8 @@ loadMoreButton.onclick = function() {
                         <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                         </div>
                         <div class="summary">
-                        <p class="regular-text">${posts[i].acf.date} | ${posts[i].content.rendered.slice(0, 250)}.</p>
+                        <p><span class="date">${posts[i].acf.date}</span></p>
+                        <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                         </div>
                         <div class="tags">                    
                         <a class="tag-label" href="#">${posts[i].acf.topics[0].name}</a>
@@ -87,7 +85,6 @@ loadMoreButton.onclick = function() {
                 createHTML();
             }
             loadMoreButton.style.display = "none";
-    
         }
         catch(error) {
             console.log(`An error has occurred: ${error}`);

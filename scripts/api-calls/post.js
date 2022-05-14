@@ -37,10 +37,10 @@ async function getPost() {
             <p><span class="date">${post.acf.date}</span></p>
             <br>
 
-          <!-- TAGS CONTAINER -->
-            <div class="tag-container">
-            </div>
-            </div>
+            <!-- TAGS CONTAINER -->
+              <div class="tag-container">
+              </div>
+          </div>
         `;  
     }
     createHTMLpost();
