@@ -55,7 +55,10 @@ hr {
 
 .tag-label {
     display: inline-block;
+    cursor: pointer;
 }
+
+
 
 
 @media (max-width: 940px) {
