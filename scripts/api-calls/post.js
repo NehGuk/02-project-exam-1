@@ -2,6 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const urlPost = `https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts/${id}?acf_format=standard&_fields=id,content,date,acf`;
 const mainGrid = document.querySelector(".main-grid");
+const pageName = document.querySelector("title");
+
 
 // GETTING THE POST CONTENT
 async function getPost() {
@@ -42,7 +44,8 @@ async function getPost() {
             <div class="tag-container">
             </div>
         </div>
-        `;  
+        `;
+        pageName.innerHTML += ` ${post.acf.title}`;
     }
     createHTMLpost();
 
@@ -61,6 +64,8 @@ async function getPost() {
       }
     }
     fetchPostTags();
+
+
     
   }
   catch(error) {

@@ -108,3 +108,4 @@ loadMoreButton.onclick = function() {
     getAllPosts();
      
 }
+
