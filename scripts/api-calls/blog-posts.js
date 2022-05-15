@@ -22,11 +22,7 @@ async function getPosts() {
         for (let i = 0; i < 10; i++) {
             
             function createHTML() {
-                let date = new Date("2017-03-23");
-                let postDate = new Date(posts[i].date);
-                let postDateT = new Date(posts[i].date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
-
-                console.log(postDateT);
+                let postDate = new Date(posts[i].date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
                 
                 allPosts.innerHTML += `
                     <div class="post-container">
@@ -37,7 +33,7 @@ async function getPosts() {
                     <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                     </div>
                     <div class="summary">
-                    <p><span class="date">${postDateT}</span></p>
+                    <p><span class="date">${postDate}</span></p>
                     
                     <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                     </div>
@@ -69,16 +65,18 @@ loadMoreButton.onclick = function() {
             for (let i = 10; i < posts.length; i++) {
                 
                 function createHTML() {
+                    let postDate = new Date(posts[i].date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
                     allPosts.innerHTML += `
                         <div class="post-container">
                         <div class="image">
+                        <h2>sdsds</h2>
                         <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
                         </div>
                         <div class="headline">
                         <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                         </div>
                         <div class="summary">
-                        <p><span class="date">${posts[i].acf.date}</span></p>
+                        <p><span class="date">${postDate}</span></p>
                         <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                         </div>
                         <div class="tags">                    
@@ -89,7 +87,7 @@ loadMoreButton.onclick = function() {
                         </div>
                     `; 
                 }
-                createHTML();
+                //createHTML();
             }
             loadMoreButton.style.display = "none";
         }
