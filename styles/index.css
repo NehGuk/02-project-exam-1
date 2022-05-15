@@ -158,6 +158,10 @@ button:hover {
         padding: 100px 20px 100px;
     }
 
+    .tagline {
+        font-size: 16px;
+    }
+
     .latest-posts {
         padding: 0 20px 20px;
         margin-top: -30px;
