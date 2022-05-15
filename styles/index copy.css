@@ -31,14 +31,6 @@ padding: 0 150px 20px;
     
 }
 
-.card-link {
-    
-    
-    
-}
-
-
-
 .grid-item {
     /* background: var(--white); */
     border: solid 2px var(--gray);
@@ -112,16 +104,13 @@ button:hover {
 }
 
 .arrow-left-button {
-    display: flex;
-    opacity: 1;
+    /* display: none; */
 }
 
 .arrow-right-button {
     /* display: none; */
-    opacity: 1;
 }
 
-/* OLDER POSTS */
 .older-posts-link {
     display: none;
     text-align: center;

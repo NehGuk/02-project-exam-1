@@ -45,13 +45,6 @@
     grid-area: headline;
 }
 
-.date {
-    font-family: source-han-sans-cjk-ja, sans-serif;
-    font-weight: 700;
-    color: var(--dark);
-    font-size: 16px;    
-
-}
 
 .summary {
     grid-area: summary;

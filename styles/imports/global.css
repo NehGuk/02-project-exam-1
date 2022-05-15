@@ -63,6 +63,14 @@ h4 {
 
 }
 
+.date {
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+    opacity: 0.8;
+    font-size: 16px;    
+}
+
 .menu-text {
     font-family: source-han-sans-cjk-ja, sans-serif;
     font-weight: 300;
