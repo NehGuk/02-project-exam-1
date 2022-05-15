@@ -17,10 +17,9 @@ async function getCarouselPosts() {
     for(let i = 0; i < 4; i++) {
         carContainer.innerHTML += `        
             <div class="grid-item page-one">
-                <a href="/post.html"><img class="card-image-small" src="${carPosts[i].acf.image}"></a>
-                
-                <a href="/post.html"><h3>${carPosts[i].acf.title}</h3></a>
-                <a href="/post.html"><h4 class="read-link">Read</h4></a>
+                <a href="/post.html?id=${carPosts[i].id}"><img class="card-image-small" src="${carPosts[i].acf.image}"></a>
+                <a href="/post.html?id=${carPosts[i].id}"><h3>${carPosts[i].acf.title}</h3></a>
+                <a href="/post.html?id=${carPosts[i].id}"><h4 class="read-link">Read</h4></a>
             </div>
             `;
     }
@@ -53,9 +52,9 @@ async function getCarouselPosts() {
                 for(let i = 4; i < 8; i++) {
                     carContainer.innerHTML += `        
                         <div class="grid-item page-one">
-                            <a href="/post.html"><img class="card-image-small" src="${carPosts[i].acf.image}"></a>
-                            <a href="/post.html"><h3>${carPosts[i].acf.title}</h3></a>
-                            <a href="/post.html"><h4 class="read-link">Read</h4></a>
+                            <a href="/post.html?id=${carPosts[i].id}"><img class="card-image-small" src="${carPosts[i].acf.image}"></a>
+                            <a href="/post.html?id=${carPosts[i].id}"><h3>${carPosts[i].acf.title}</h3></a>
+                            <a href="/post.html?id=${carPosts[i].id}"><h4 class="read-link">Read</h4></a>
                         </div>
                         `;
                 }   
