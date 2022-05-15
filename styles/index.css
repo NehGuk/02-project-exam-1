@@ -9,6 +9,14 @@
     padding: 100px 150px 100px;
 }
 
+.tagline {
+    /* display: none; */
+    font-family: source-han-sans-cjk-ja, sans-serif;
+    color: var(--dark);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
 /* CAROUSEL */
 .latest-posts {
 padding: 0 150px 20px;
@@ -41,8 +49,8 @@ padding: 0 150px 20px;
 
 
 .card-image-small {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     border-radius: 200px;
     object-fit: cover;
     display: block;
@@ -53,6 +61,7 @@ padding: 0 150px 20px;
 .read-link {
     padding-top: 10px;  
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content:flex-end;  
 
@@ -111,7 +120,7 @@ button:hover {
 }
 
 
-@media (max-width: 940px) {
+@media (max-width: 1250px) {
 
     .arrow-left-container, .arrow-right-container {
         display: none;

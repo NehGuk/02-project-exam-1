@@ -37,8 +37,8 @@ async function getPost() {
             <br>
             <p><span class="date">${postDate}</span></p>
             <br>
-
           <!-- TAGS CONTAINER -->
+            <br>
             <div class="tag-container">
             </div>
         </div>

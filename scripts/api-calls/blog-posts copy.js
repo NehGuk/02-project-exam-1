@@ -61,24 +61,15 @@ loadMoreButton.onclick = function() {
         try {
             const res = await fetch(urlPosts);
             const posts = await res.json();
-            /* console.log("Helooo");
-            console.log(posts[0].id);
-            console.log(posts[0].acf.title);
-            console.log(posts[0].acf.content);
-            console.log(posts[0].acf.author);
-            console.log(posts[0].acf.date);
-            console.log(posts[0].acf.topics[0].name); */
-        
-            allPosts.innerHTML += "";
-    
+
             for (let i = 10; i < posts.length; i++) {
                 
                 function createHTML() {
                     let postDate = new Date(posts[i].date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
-                    
                     allPosts.innerHTML += `
                         <div class="post-container">
                         <div class="image">
+                        <h2>sdsds</h2>
                         <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
                         </div>
                         <div class="headline">
@@ -86,25 +77,23 @@ loadMoreButton.onclick = function() {
                         </div>
                         <div class="summary">
                         <p><span class="date">${postDate}</span></p>
-                        
                         <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                         </div>
-                        <div class="tags">
+                        <div class="tags">                    
                         <a class="tag-label" href="#">${posts[i].acf.topics[0].name}</a>
                         <a class="tag-label" href="#">${posts[i].acf.topics[1].name}</a>
                         <a class="tag-label" href="#">${posts[i].acf.topics[2].name}</a>
                         </div>
-                        </div> 
+                        </div>
                     `; 
-                    loadMoreButton.style.display = "none";
                 }
-                createHTML();
+                //createHTML();
             }
+            loadMoreButton.style.display = "none";
         }
         catch(error) {
             console.log(`An error has occurred: ${error}`);
         }
     }
-    getAllPosts();
-     
+    getAllPosts();     
 }

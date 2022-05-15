@@ -135,7 +135,10 @@ h4 {
 }
 
 hr {
-    color: var(--red);
+    /* color: var(--red); */
+    background-color: var(--red);
+    height: 3px;
+    margin-bottom: 5px;
     
 }
 
