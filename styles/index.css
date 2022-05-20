@@ -17,6 +17,72 @@
     margin-top: 20px;
 }
 
+
+
+
+/* CAROUSEL B */
+
+.carousel-big-container {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.arrow-l {
+    text-align: left;
+    /* background: green; */
+    padding: 100px 0px;
+    
+    
+}
+
+.arrow-l button {
+    /* border: solid 5px grey; */
+    
+}
+
+.arrow-r {
+    text-align: right;
+    /* background: green; */
+    padding: 100px 0px;
+}
+
+.arrow-r button {
+    /* border: solid 5px grey; */
+    
+}
+
+.carousel-small-container {
+    display: grid;
+    /* background-color: purple; */
+    /* border: solid blue 5px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    /* background-color: wheat; */
+    border: solid var(--gray) 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card:hover {
+    background-color: var(--white);
+    /* border: solid 2px var(--dark); */
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+
+
 /* CAROUSEL */
 .latest-posts {
 padding: 0 150px 20px;
@@ -125,8 +191,7 @@ button:hover {
 .older-posts-link {
     display: none;
     text-align: center;
-    /* background: green; */
-    margin: -100px 60px 100px;
+    margin: 100px 60px 100px;
     text-decoration: underline;
 }
 

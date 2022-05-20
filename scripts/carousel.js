@@ -3,7 +3,6 @@ const carContainer = document.querySelector(".carousel-container");
 
 
 
-
 async function getCarouselPosts() {
     const result = await fetch(urlPosts);
     const carPosts = await result.json();
@@ -57,9 +56,18 @@ async function getCarouselPosts() {
                             <a href="/post.html?id=${carPosts[i].id}"><h4 class="read-link">Read</h4></a>
                         </div>
                         `;
-                }   
-
+                }
+                
+                    carContainer.innerHTML += `
+                    <button class="arrow-right-button"><div class="grid-item arrow-right-container">
+                        <img src="/assets/icons/arrow-forward.png">
+                    </div></button>
+                    `;
+                    
+                            
+                
             }
+            
         }
         makeRightArrowWork();        
             
