@@ -26,8 +26,36 @@ header {
 /* FORM */
 
 form {
+    display: grid;
+    gap: 10px;
     
 }
+
+form input {
+    padding: 15px;
+    border: solid 1px var(--gray);
+    border-radius: 3px; */
+    font-size: 1em;
+}
+
+
+.form-error {
+    display: none;
+    font-size: 0.6em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: var(--red);
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+.thank-you-message {
+    display: none;
+    color: var(--dark);
+}
+
+
 
 
 @media (max-width: 940px) {
