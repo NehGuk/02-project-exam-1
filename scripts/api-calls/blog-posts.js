@@ -33,7 +33,7 @@ async function getPosts() {
                     <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                     </div>
                     <div class="summary">
-                    <p><span class="date">${postDate}</span></p>
+                    <p><span class="date">By ${posts[i].acf.author} | ${postDate}</span></p>
                     
                     <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                     </div>
@@ -85,7 +85,7 @@ loadMoreButton.onclick = function() {
                         <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
                         </div>
                         <div class="summary">
-                        <p><span class="date">${postDate}</span></p>
+                        <p><span class="date">By ${posts[i].acf.author} | ${postDate}</span></p>
                         
                         <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                         </div>

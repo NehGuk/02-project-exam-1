@@ -59,6 +59,9 @@ hr {
     cursor: pointer;
 }
 
+.back-to-blog {
+    color: var(--red);
+}
 
 
 

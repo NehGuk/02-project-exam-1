@@ -43,6 +43,9 @@ async function getPost() {
             <br>
             <div class="tag-container">
             </div>
+            <br>
+            <br>
+            <a href="/blog.html"><p class="small-text"><span class="back-to-blog">&#x2190 Back to blog</span></p></a>
         </div>
         `;
         pageName.innerHTML += ` ${post.acf.title}`;
