@@ -7,7 +7,7 @@ async function getAboutContent() {
     
     aboutContent.innerHTML = `
         ${aboutText.content.rendered}
-        <a class="cta" href="/blog.html">Read nowwww</a>
+        <a class="cta" href="/blog.html">Read now</a>
         `;
 }
 getAboutContent();
