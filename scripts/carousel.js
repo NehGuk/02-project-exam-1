@@ -1,4 +1,4 @@
-const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,content,date,acf&per_page=8";
+const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,title,content,date,acf&per_page=8";
 const carSmallContainer = document.querySelector(".carousel-small-container");
 const arrowR = document.querySelector(".arrow-r");
 const arrowL = document.querySelector(".arrow-l");
@@ -13,7 +13,7 @@ async function getCarouselPosts() {
         carSmallContainer.innerHTML += `        
             <div class="card">
                 <a href="/post.html?id=${latestPosts[i].id}"><img class="card-image-small" src="${latestPosts[i].acf.image}"></a>
-                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].acf.title}</h3></a>
+                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].title.rendered}</h3></a>
                 <a href="/post.html?id=${latestPosts[i].id}"><h4 class="read-link">Read</h4></a>
             </div>
             `;
@@ -29,7 +29,7 @@ arrowR.onclick = async function getNextPosts() {
         carSmallContainer.innerHTML += `        
             <div class="card">
                 <a href="/post.html?id=${latestPosts[i].id}"><img class="card-image-small" src="${latestPosts[i].acf.image}"></a>
-                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].acf.title}</h3></a>
+                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].title.rendered}</h3></a>
                 <a href="/post.html?id=${latestPosts[i].id}"><h4 class="read-link">Read</h4></a>
             </div>
             `;
@@ -47,7 +47,7 @@ arrowL.onclick = async function getPreviousPosts() {
         carSmallContainer.innerHTML += `        
             <div class="card">
                 <a href="/post.html?id=${latestPosts[i].id}"><img class="card-image-small" src="${latestPosts[i].acf.image}"></a>
-                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].acf.title}</h3></a>
+                <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].title.rendered}</h3></a>
                 <a href="/post.html?id=${latestPosts[i].id}"><h4 class="read-link">Read</h4></a>
             </div>
             `;

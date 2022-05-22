@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const urlPost = `https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts/${id}?acf_format=standard&_fields=id,content,date,acf`;
+const urlPost = `https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts/${id}?acf_format=standard&_fields=id,title,content,date,acf`;
 const mainGrid = document.querySelector(".main-grid");
 const pageName = document.querySelector("title");
 
@@ -32,7 +32,7 @@ async function getPost() {
       
         <!-- CONTENT -->
         <div class="content">
-          <h2>${post.acf.title}</h2>
+          <h2>${post.title.rendered}</h2>
           <p class="regular-text">${post.content.rendered}</p>
             <hr>
             <p><span class="author-name"><strong>${post.acf.author}</strong></span></p>

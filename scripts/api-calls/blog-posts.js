@@ -1,4 +1,4 @@
-const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,content,date,acf&per_page=99";
+const urlPosts = "https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts?categories=12&acf_format=standard&_fields=id,title,content,date,acf&per_page=99";
 const allPosts = document.querySelector(".all-posts");
 const postContainer = document.querySelector(".post-container");
 const loadMoreButton = document.querySelector("button.load-more-button");
@@ -30,7 +30,7 @@ async function getPosts() {
                     <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
                     </div>
                     <div class="headline">
-                    <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
+                    <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].title.rendered}</h2></a>
                     </div>
                     <div class="summary">
                     <p><span class="date">By ${posts[i].acf.author} | ${postDate}</span></p>
@@ -82,7 +82,7 @@ loadMoreButton.onclick = function() {
                         <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
                         </div>
                         <div class="headline">
-                        <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].acf.title}</h2></a>
+                        <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].title.rendered}</h2></a>
                         </div>
                         <div class="summary">
                         <p><span class="date">By ${posts[i].acf.author} | ${postDate}</span></p>
