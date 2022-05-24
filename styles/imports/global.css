@@ -86,7 +86,7 @@ h4 {
 .tag-label {
     font-family: source-han-sans-cjk-ja, sans-serif;
     background: var(--red);
-    border-radius: 10px;
+    border-radius: 5%;
     padding: 4px 10px;
     color: var(--offwhite);
     font-size: 14px;

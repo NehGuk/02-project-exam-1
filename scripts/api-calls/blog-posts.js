@@ -38,9 +38,9 @@ async function getPosts() {
                     <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                     </div>
                     <div class="tags">
-                    <a class="tag-label" href="#">${posts[i].acf.topics[0].name}</a>
-                    <a class="tag-label" href="#">${posts[i].acf.topics[1].name}</a>
-                    <a class="tag-label" href="#">${posts[i].acf.topics[2].name}</a>
+                    <a class="tag-label">${posts[i].acf.topics[0].name}</a>
+                    <a class="tag-label">${posts[i].acf.topics[1].name}</a>
+                    <a class="tag-label">${posts[i].acf.topics[2].name}</a>
                     </div>
                     </div> 
                 `; 
@@ -90,9 +90,9 @@ loadMoreButton.onclick = function() {
                         <p class="regular-text">${posts[i].content.rendered.slice(0, 260)}...</p>
                         </div>
                         <div class="tags">
-                        <a class="tag-label" href="#">${posts[i].acf.topics[0].name}</a>
-                        <a class="tag-label" href="#">${posts[i].acf.topics[1].name}</a>
-                        <a class="tag-label" href="#">${posts[i].acf.topics[2].name}</a>
+                        <a class="tag-label">${posts[i].acf.topics[0].name}</a>
+                        <a class="tag-label">${posts[i].acf.topics[1].name}</a>
+                        <a class="tag-label">${posts[i].acf.topics[2].name}</a>
                         </div>
                         </div> 
                     `; 
