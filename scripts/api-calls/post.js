@@ -25,13 +25,13 @@ async function getPost() {
         <!-- MODAL -->
           <div class="modal">
             <img class="full-img" src="${post.acf.image}">
-            <p class="caption">${post.title.rendered} | <strong class="photo-credit">IMAGE CREDIT:</strong> <span class="photo-credit">xxxxx</span></p>
+            <p class="caption">${post.acf.image_caption} | <strong class="photo-credit">IMAGE CREDIT:</strong> <span class="photo-credit">${post.acf.image_credit}</span></p>
             
           </div>
         <!-- HEADER -->
         <header>
           <div class="image img-container">
-            <img class="image-post" src="${post.acf.image}">
+            <img class="image-post" src="${post.acf.image}" alt="${post.acf.image_caption}">
           </div>
         </header>
       

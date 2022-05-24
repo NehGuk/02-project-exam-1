@@ -52,7 +52,8 @@ header {
 }
 
 .modal img {
-    width: 60%;
+    /* width: 50%; */
+    height: 90%;
 }
 
 .modal p {
@@ -148,6 +149,7 @@ hr {
     }
 
     .modal img {
-        width: 100%;
+        width: 80%;
+        height: auto;
     }
 }
