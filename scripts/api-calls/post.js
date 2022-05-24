@@ -4,7 +4,6 @@ const urlPost = `https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts/${id}?acf
 const mainGrid = document.querySelector(".main-grid");
 const pageName = document.querySelector("title");
 
-
 // GETTING THE POST CONTENT
 async function getPost() {
   try {
@@ -54,7 +53,7 @@ async function getPost() {
             <a href="/blog.html"><p class="small-text"><span class="back-to-blog">&#x2190 Back to blog</span></p></a>
         </div>
         `;
-        pageName.innerHTML += ` ${post.acf.title}`;
+        pageName.innerHTML += ` ${post.title.rendered}`;
     }
     createHTMLpost();
 
