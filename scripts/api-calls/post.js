@@ -50,7 +50,7 @@ async function getPost() {
             </div>
             <br>
             <br>
-            <a href="/blog.html"><p class="small-text"><span class="back-to-blog">&#x2190 Back to blog</span></p></a>
+            <a href="/blog.html"><p class="small-text"><span class="back-to-blog">&#11104; Back to blog</span></p></a>
         </div>
         `;
         pageName.innerHTML += ` ${post.title.rendered}`;

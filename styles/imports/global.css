@@ -84,12 +84,14 @@ h4 {
 }
 
 .tag-label {
+    display: inline-block;
     font-family: source-han-sans-cjk-ja, sans-serif;
     background: var(--red);
     border-radius: 5%;
     padding: 4px 10px;
     color: var(--offwhite);
     font-size: 14px;
+    cursor: default;
 }
 
 .tag-label:hover {

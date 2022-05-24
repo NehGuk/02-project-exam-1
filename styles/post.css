@@ -113,13 +113,9 @@ hr {
     font-size: 16px;
 }
 
-.tag-label {
-    display: inline-block;
-    cursor: pointer;
-}
-
 .back-to-blog {
     color: var(--red);
+    font-size: 1em;
 }
 
 
@@ -152,4 +148,9 @@ hr {
         width: 80%;
         height: auto;
     }
+
+    .back-to-blog {
+        font-size: 2em;
+    }
+
 }
