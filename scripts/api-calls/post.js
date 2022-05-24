@@ -23,9 +23,15 @@ async function getPost() {
     function createHTMLpost() {
       let postDate = new Date(post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
       mainGrid.innerHTML = `
+        <!-- MODAL -->
+          <div class="modal">
+            <img class="full-img" src="${post.acf.image}">
+            <p class="caption">${post.title.rendered} | <strong class="photo-credit">IMAGE CREDIT:</strong> <span class="photo-credit">xxxxx</span></p>
+            
+          </div>
         <!-- HEADER -->
         <header>
-          <div class="image">
+          <div class="image img-container">
             <img class="image-post" src="${post.acf.image}">
           </div>
         </header>
@@ -68,6 +74,26 @@ async function getPost() {
     }
     fetchPostTags();
 
+    function createModal() {
+      const modal = document.querySelector(".modal");
+      const imagePost = document.querySelector(".image-post");
+      const imageBig = document.querySelector(".image-post");
+      const caption = document.querySelector(".caption");
+    
+      imagePost.addEventListener("click", () => {
+        console.log("Image clicked");
+        modal.classList.add("open");
+      });
+    
+      modal.addEventListener("click", (e) => {
+        //console.log(e);
+        if(e.target.classList.contains("modal")) {
+          modal.classList.remove("open");
+        };
+      });
+    };
+    createModal();
+
 
     
   }
@@ -76,3 +102,14 @@ async function getPost() {
   }
 }
 getPost();
+
+
+// MODAL
+
+
+
+
+
+/// MODAL END
+
+
