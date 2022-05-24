@@ -65,6 +65,12 @@ header {
     transform: translate(-50%, -2%);
 }
 
+.photo-credit {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    
+}
+
 .full-img {
     /* display: none; */
     position: absolute;
