@@ -4,7 +4,7 @@ const urlPost = `https://gingaikidb.henrikugler.no/wp-json/wp/v2/posts/${id}?acf
 const mainGrid = document.querySelector(".main-grid");
 const pageName = document.querySelector("title");
 
-// GETTING THE POST CONTENT
+// GETTING THE POST CONTENT TESTING
 async function getPost() {
   try {
     const result = await fetch(urlPost);
