@@ -35,19 +35,23 @@
       })(document);
     </script>
   <!-- Gingaiki scripts -->
+  <script defer src="/scripts/hamburger.js"></script>
   <script defer src="/scripts/api-calls/blog-posts.js"></script>
 </head>
 <body>
+
 <!-- NAV -->
-<nav>
-  <a href="/index.html"><div class="logo"><img src="/assets/logo.png"></a>
-  <img class="hamburger-menu" src="/assets/icons/menu.png">    
-  <div class="menu">
-      <a class="menu-text" href="/index.html">Home</a>
-      <a class="menu-text" id="selected" href="/blog.html">Blog</a>
-      <a class="menu-text" href="/about.html">About</a>
-      <a class="menu-text" href="/contact.html">Contact</a>
+<nav class="navbar">
+  <div class="logo"><a href="/index.html"><img src="/assets/logo.png"></a></div>
+  <div class="navbar-links">
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/blog.html" id="current">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+      </ul>
   </div>
+  <a href="#" class="toggle-button"><img src="/assets/icons/menu.png"></a>
 </nav>
 
 <!-- HEADER -->

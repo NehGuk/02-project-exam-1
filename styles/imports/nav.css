@@ -1,84 +1,94 @@
 
-/* LOGO */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
 .logo img {
+    /* width: 100px; */
+}
+
+.logo img:hover {
+    opacity: 0.85;
+    transition: 0.5s ease;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 
 }
 
-.logo-text {
-    /* font-family: kazuraki-sp2n, serif; */
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
     font-family: source-han-sans-cjk-ja, sans-serif;
-    font-weight: 300;
-    font-size: 35px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
     color: var(--dark);
-    display: inline;
-
-}
-
-/* MENU */
-.menu {
-    display: inline-block;
-    float: right;
-    padding-right: 100px;
-    padding-top: 20px;
-}
-
-.menu-text {
-    font-family: source-han-sans-cjk-ja, sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--dark);
-    opacity: 80%;
-    padding-right: 50px;
-}
-
-.menu-text:hover {
-    /* color: var(--black); */
-    opacity: 40%;
-}
-
-.menu-text-selected {
-    color: var(--dark);
-    opacity: 0%;
-}
-
-#selected {
-    font-weight: 700;
-    opacity: 70%;
-}
-
-/* HAMBURGER MENU */
-.hamburger-menu {
-    display: none;
-}
-
-
-
-@media (max-width: 940px) {
-nav {
-    /* display: none; */
-}
-
-.menu {
-    padding-right: 0;
-    padding-top: 70px;
-    display: none;
-    
-
-}
-
-.menu a {
+    opacity: 0.6;
+    padding: 1.5em;
     display: block;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    text-align: right;
+    overflow: hidden;
 }
 
-.hamburger-menu {
-    display: inline-block;
-    /* display: none; */
+.navbar-links li a:hover {
+    opacity: 1;
+    /* color: red; */
+    transition: 0.5s ease;
+}
+
+#current {
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.toggle-button {
     position: absolute;
-    right: 0;
-    padding-right: 30px;
+    display: none;
+    top: 0.2rem;
+    right: 1rem;
 }
 
+
+@media (max-width: 800px) {
+    .logo img {
+        width: 150px;
+        margin-top: 5px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        
+    }
 }

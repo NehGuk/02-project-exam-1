@@ -41,17 +41,19 @@
     <script defer src="/scripts/carousel.js"></script>
 </head>
 <body>
-<!-- NAV -->
 
-<nav>
-    <a href="/index.html"><div class="logo"><img src="/assets/logo.png"></a>
-    <img class="hamburger-menu" src="/assets/icons/menu.png">    
-    <div class="menu">
-        <a class="menu-text" id="selected" href="/index.html">Home</a>
-        <a class="menu-text" href="/blog.html">Blog</a>
-        <a class="menu-text" href="/about.html">About</a>
-        <a class="menu-text" href="/contact.html">Contact</a>
+<!-- NAV -->
+<nav class="navbar">
+    <div class="logo"><a href="/index.html"><img src="/assets/logo.png"></a></div>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="/index.html" id="current">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
     </div>
+    <a href="#" class="toggle-button"><img src="/assets/icons/menu.png"></a>
 </nav>
 
 <!-- HEADER -->
@@ -63,9 +65,7 @@
     </div>
 </header>
 
-
 <!-- CAROUSEL -->
-
 <section class="carousel-section">
     <h4 class="latest-posts">Latest posts</h4>
     <div class="carousel-big-container">
@@ -103,6 +103,5 @@
     <div class="footer">    
         <p class="signature"><strong>Gingaiki</strong><br><br>Henri Kugler | Project Exam 1 | 2022</p>
     </div>
-
 </body>
 </html>
