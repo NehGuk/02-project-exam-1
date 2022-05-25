@@ -35,7 +35,7 @@ async function getPosts() {
                     <div class="summary">
                     <p><span class="date">By ${posts[i].acf.author} | ${postDate}</span></p>
                     
-                    <p class="regular-text">${posts[i].content.rendered.slice(0, 300)}... <a href="/post.html?id=${posts[i].id}" class="read-more"><strong>Read more &#10141;</strong></a></p>
+                    <p class="regular-text">${posts[i].content.rendered.slice(0, 320)}... <a href="/post.html?id=${posts[i].id}" class="read-more"><strong>Read more &#10141;</strong></a></p>
                     </div>
                     <div class="tags">
                     <a class="tag-label">${posts[i].acf.topics[0].name}</a>

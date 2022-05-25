@@ -13,25 +13,24 @@
 h1 {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
-    font-size: 40px;
+    font-size: 2.4em;
 }
 
 h2 {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 h3 {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 a {
     text-decoration: none;
 }
-
 
 h4 {
     font-family: source-han-sans-cjk-ja, sans-serif;
@@ -49,7 +48,7 @@ h4 {
 .regular-text {
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--dark);
-    font-size: 22px;
+    font-size: 1.2em;
     margin-top: 20px;
 }
     
@@ -60,7 +59,6 @@ h4 {
     color: var(--dark);
     font-size: 24px;
     opacity: 80%;
-
 }
 
 .date {
@@ -68,29 +66,19 @@ h4 {
     font-weight: 700;
     color: var(--dark);
     opacity: 0.8;
-    font-size: 16px;    
-}
-
-.menu-text {
-    font-family: source-han-sans-cjk-ja, sans-serif;
-    font-weight: 300;
-    color: var(--dark);
-    opacity: 80%;
-}
-
-.menu-text-selected {
-    color: var(--dark);
-    opacity: 0%;
+    font-size: 1em;    
 }
 
 .tag-label {
     display: inline-block;
     font-family: source-han-sans-cjk-ja, sans-serif;
+    text-transform: uppercase;
     background: var(--red);
     border-radius: 5%;
-    padding: 4px 10px;
+    padding: 6px 16px;
     color: var(--offwhite);
-    font-size: 14px;
+    font-size: 0.8em;
+    margin-top: 0.5em;
     cursor: default;
 }
 
@@ -129,26 +117,13 @@ h4 {
     padding-top: 60px;
 }
 
-/* LOGO */
-.logo {
-    margin-top: 20px;   
-}
-
-.logo-text {
-    /* font-family: kazuraki-sp2n, serif; */
-    font-family: source-han-sans-cjk-ja, sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-    color: var(--dark);
-    display: inline;
-
-}
 
 hr {
     /* color: var(--red); */
     background-color: var(--red);
     height: 3px;
     margin-bottom: 5px;
+    border: none;
     
 }
 
@@ -194,7 +169,7 @@ body {
 
 @media (max-width: 940px) {
     h1 {
-        font-size: 20px;
+        font-size: 1.4em;
     }
 
     .small-text {
