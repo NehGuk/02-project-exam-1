@@ -12,7 +12,7 @@ async function getCarouselPosts() {
     for(let i = 0; i < 4; i++) {
         carSmallContainer.innerHTML += `        
             <div class="card">
-                <a href="/post.html?id=${latestPosts[i].id}"><img class="card-image-small" src="${latestPosts[i].acf.image}"></a>
+                <a href="/post.html?id=${latestPosts[i].id}"><img class="card-image-small" src="${latestPosts[i].acf.image}" alt="Post image: ${latestPosts[i].acf.image_caption}"></a>
                 <a href="/post.html?id=${latestPosts[i].id}"><h3>${latestPosts[i].title.rendered}</h3></a>
                 <a href="/post.html?id=${latestPosts[i].id}"><h4 class="read-link">Read</h4></a>
             </div>
