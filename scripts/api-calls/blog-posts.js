@@ -27,7 +27,7 @@ async function getPosts() {
                 allPosts.innerHTML += `
                     <div class="post-container">
                     <div class="image">
-                    <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
+                    <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}" alt="Post image: ${posts[i].acf.image_caption}"></a>
                     </div>
                     <div class="headline">
                     <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].title.rendered}</h2></a>
@@ -79,7 +79,7 @@ loadMoreButton.onclick = function() {
                     allPosts.innerHTML += `
                         <div class="post-container">
                         <div class="image">
-                        <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}"></a>
+                        <a href="/post.html?id=${posts[i].id}"><img class="image-blog" src="${posts[i].acf.image}" alt="Post image: ${posts[i].acf.image_caption}"></a>
                         </div>
                         <div class="headline">
                         <a href="/post.html?id=${posts[i].id}"><h2>${posts[i].title.rendered}</h2></a>
