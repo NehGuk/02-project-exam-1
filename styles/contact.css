@@ -36,6 +36,10 @@ form {
     color: var(--dark);
 }
 
+label {
+    display: none;
+}
+
 input, textarea {
     font-size: 0.8em;
     padding: 15px;
