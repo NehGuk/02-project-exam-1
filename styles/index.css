@@ -18,6 +18,7 @@
 }
 
 /* CAROUSEL */
+
 .latest-posts {
     padding: 0 150px 20px;
 }
@@ -148,8 +149,6 @@ button:hover {
         /* display: none; */
         padding: 100px 20px 20px;
     }
-
-    
 
     .tagline {
         font-size: 16px;
