@@ -65,10 +65,22 @@ input:focus, textarea:focus, button:focus {
     padding-left: 10px;
 }
 
-.thank-you-message {
+#thank-you-message {
     display: none;
 }
 
+button:disabled {
+    background: var(--red);
+    opacity: 0.5;
+    border: none;
+    cursor: default;
+}
+
+button:disabled:hover {
+    background: var(--red);
+    color: var(--white);
+    border: none;
+}
 
 
 

@@ -1,57 +1,43 @@
-
 const form = document.querySelector("form");
 const name = document.querySelector("#name");
-const nameError = document.querySelector("#name-error");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#email-error");
 const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subject-error");
 const message = document.querySelector("#message");
-const messageError = document.querySelector("#message-error");
-const thankYouMessage = document.querySelector(".thank-you-message");
+const button = document.querySelector("button");
+const thankYouMessage = document.querySelector("#thank-you-message");
 
-function validateForm() {
+function checkLength(value, len) {
+    if (value.trim().length >= len) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+function validateEmail(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
+};
+
+function checkIfButtonIsDisabled() {
+    if (checkLength(name.value, 5) && checkLength(subject.value, 15) && checkLength(message.value, 25) && validateEmail(email.value)) {
+        button.disabled = false;
+    } else {
+        button.disabled = true;
+    }
+};
+
+name.addEventListener("keyup", checkIfButtonIsDisabled);
+email.addEventListener("keyup", checkIfButtonIsDisabled);
+subject.addEventListener("keyup", checkIfButtonIsDisabled);
+message.addEventListener("keyup", checkIfButtonIsDisabled);
+
+function submitForm(event) {
     event.preventDefault();
-
-    if(name.value.trim().length >= 5) {
-        nameError.style.display = "none";
-    }
-    else {
-        nameError.style.display = "block";
-    }
-
-    if(subject.value.trim().length >= 15) {
-        subjectError.style.display = "none";
-    }
-    else {
-        subjectError.style.display = "block";
-    }
-
-    if(message.value.trim().length >= 25) {
-        messageError.style.display = "none";
-    }
-    else {
-        messageError.style.display = "block";
-    }
-
-    function validateEmail(email) {
-        const regEx = /\S+@\S+\.\S+/;
-        const patternMatches = regEx.test(email);
-        return patternMatches;
-    }
-
-    if(validateEmail(email.value) === true) {
-        emailError.style.display = "none";
-    }
-    else {
-        emailError.style.display = "block";
-    }
-}
-
-form.addEventListener("submit", validateForm);
-
-form.onsubmit = function formSubmitted() {
-    event.preventDefault();    
+    thankYouMessage.style.display = "block";
     form.reset();
-    //console.log("Form submitted");
-}
+    form.style.display = "none";
+};
+
+form.addEventListener("submit", submitForm);
