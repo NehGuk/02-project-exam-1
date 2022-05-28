@@ -48,11 +48,12 @@ function validateForm() {
     }
 }
 
-
 form.addEventListener("submit", validateForm);
 
-
-
-
-
+form.onsubmit = function() {
+    event.preventDefault();
+    thankYouMessage.style.display = "block";
+    //console.log(event);
+    form.reset();
+};
 
