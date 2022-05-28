@@ -146,7 +146,7 @@ body {
 /* LOADER */
 .loader {
     display: block;
-    border: 10px solid #f9fcfa;
+    border: 10px solid var(--white);
     border-top: 10px solid var(--red);
     border-radius: 50%;
     width: 50px;

@@ -105,8 +105,11 @@ button:hover {
     display: none;
     flex-direction: column;
     justify-content: end;
+}
 
-    
+.loader {
+
+text-align: center;
 }
 
 
