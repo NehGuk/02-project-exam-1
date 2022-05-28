@@ -29,7 +29,7 @@
         "image summary"
         "image tags"
         ;
-    opacity: 95%;
+    opacity: 0.95;
 }
 
 .post-container:hover {
