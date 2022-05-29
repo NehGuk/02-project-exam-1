@@ -3,6 +3,10 @@
 @import url(/styles/imports/footer.css);
 
 
+html {
+    background: var(--gray);
+}
+
 /* HEADER */
 .welcome {
     /* display: none; */
@@ -133,7 +137,8 @@ text-align: center;
     display: none;
     font-family: source-han-sans-cjk-ja, sans-serif;
     color: var(--offwhite);
-    font-size: 1.5em;
+    font-size: 0.8em;
+    text-transform: uppercase;
     background: var(--red);
     border-radius: 3px;
     padding: 10px 10px;
@@ -141,7 +146,6 @@ text-align: center;
     width: 50%;
     margin: 0 auto 80px auto;
     text-align: center;
-    font-weight: 700;
     cursor: pointer;
     border: 1px solid var(--offwhite);
 }
