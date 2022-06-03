@@ -28,10 +28,9 @@ xxxxxxx
 
 ## Links
 
-<!-- - [Mid-fidelity web prototype](https://xd.adobe.com/view/b08399c0-a725-4348-ac92-9de243d70591-e5d0/);
-- [Low-fidelity mobile prototype](https://xd.adobe.com/view/5ea1f10f-8843-4eb2-893d-083f197a63ee-0bf2/);
-- [Gantt chart](https://app.instagantt.com/shared/61be4727d4b9055cb29e34dd);-->
-
+- [Mid-fidelity web prototype](https://xd.adobe.com/view/413fc635-2183-4391-b013-e1b83c0523cc-146c/);
+- [Low-fidelity mobile prototype](https://xd.adobe.com/view/c1eaa4af-2c28-4e88-94e1-a6049ff8c5db-94b9/);
+- [Gantt chart](https://app.instagantt.com/shared/629a7c45f795175173b46d27);
 - [Full report](https://shared-assets.adobe.com/link/c3c0151f-9dce-4dfe-7023-d3d0f8914d1a).
 
 ## Grade & Feedback from instructor
