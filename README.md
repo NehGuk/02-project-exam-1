@@ -28,14 +28,16 @@ xxxxxxx
 
 ## Links
 
-- [Mid-fidelity web prototype](https://xd.adobe.com/view/b08399c0-a725-4348-ac92-9de243d70591-e5d0/);
+<!-- - [Mid-fidelity web prototype](https://xd.adobe.com/view/b08399c0-a725-4348-ac92-9de243d70591-e5d0/);
 - [Low-fidelity mobile prototype](https://xd.adobe.com/view/5ea1f10f-8843-4eb2-893d-083f197a63ee-0bf2/);
 - [Gantt chart](https://app.instagantt.com/shared/61be4727d4b9055cb29e34dd);
-- [Full report](https://shared-assets.adobe.com/link/e01001d4-0f56-4825-7ed8-391135a7e4d7).
+- [Full report](https://shared-assets.adobe.com/link/e01001d4-0f56-4825-7ed8-391135a7e4d7). -->
 
 ## Grade & Feedback from instructor
 
-**Grade:** X
+Not graded yet.
+
+<!-- **Grade:** X
 
 **Appealing design:** 2,75 / 3
 
@@ -58,7 +60,7 @@ _Comment: Well thought through report. Nice to read the student’s holistic thi
 - Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS;
 - Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS;
 - Masters industry-relevant tools, techniques and expressions in design process and development of websites in accordance with regulations and guidelines for universal design;
-- Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented.
+- Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented. -->
 
 ## Contributing
 
