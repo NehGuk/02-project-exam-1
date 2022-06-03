@@ -1,4 +1,4 @@
-# Community Science Museum
+# Gingaiki
 
 ![image](./assets/screenshot-gingaiki.jpg)
 
