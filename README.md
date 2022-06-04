@@ -2,8 +2,6 @@
 
 ![image](./assets/screenshot-gingaiki.jpg)
 
-[Link to the website deployed via Netlify](https://heartfelt-pegasus-4adc58.netlify.app/index.html)
-
 Gingaiki is a blog on traditional martial arts. It has been developed as part of my Project Exam 1, at the end of my first year as a front-end development student.
 
 ## Description
@@ -28,6 +26,7 @@ The development of this project consisted of the following steps:
 
 ## Links
 
+- PRODUCT | [Link to the website deployed via Netlify](https://heartfelt-pegasus-4adc58.netlify.app/index.html)
 - [Mid-fidelity web prototype](https://xd.adobe.com/view/413fc635-2183-4391-b013-e1b83c0523cc-146c/);
 - [Low-fidelity mobile prototype](https://xd.adobe.com/view/c1eaa4af-2c28-4e88-94e1-a6049ff8c5db-94b9/);
 - [Gantt chart](https://app.instagantt.com/shared/629a7c45f795175173b46d27);
