@@ -4,15 +4,16 @@
 
 [Link to the website deployed via Netlify](https://heartfelt-pegasus-4adc58.netlify.app/index.html)
 
-Short intro
+Gingaiki is a blog on traditional martial arts. It has been developed as part of my Project Exam 1, at the end of my first year as a front-end development student.
 
 ## Description
 
-xxxxxxx
+The development of this project consisted of the following steps:
 
-- xxxxxxx
-- xxxxxx
-- xxxxxxx
+- Creating a headless WordPress installation and populating it with content;
+- Develop a website with HTML, CSS and Javascript;
+- Making API calls to the WordPress REST API to fetch the data;
+- Installing Hotjar and using it to improve the website's user experience.
 
 ## Built with
 
@@ -21,9 +22,8 @@ xxxxxxx
 - CSS
 - Javascript
 - Wordpress REST API
-  - Plugin: xxxx
-  - Plugin: xxxxx
-  - Plugin: xxxxxx
+  - Plugin: [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
+  - Plugin: [Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 - Hotjar
 
 ## Links
