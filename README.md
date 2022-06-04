@@ -23,7 +23,7 @@ The development of this project consisted of the following steps:
 - Javascript
 - Wordpress REST API
   - Plugin: [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
-  - Plugin: [Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
+  - Plugin: [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 - Hotjar
 
 ## Links
