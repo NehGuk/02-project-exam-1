@@ -36,31 +36,6 @@ The development of this project consisted of the following steps:
 
 Not graded yet.
 
-<!-- **Grade:** X
-
-**Appealing design:** 2,75 / 3
-
-_Comment: The site looks great. Fonts and colors well chosen. Easy to navigate site. Ideally, projects are delivered as though they’re ready to go live for a client._
-
-**Technically efficient:** 4 / 4
-
-*\_*Comment: HTML is neat, bug-free and semantic. CSS is organised and follows DRY principles. No issues on the technical side.\*
-
-**WCAG guidelines, content management and SEO:** 2 / 2
-
-*\_*Comment: The blue text on the blue background is AA but not AAA compliant. Good if you can get AAA compliance but no points deduction.\*
-
-**Report:** 1 / 1
-
-_Comment: Well thought through report. Nice to read the student’s holistic thinking including topics like ED&I Very little to fault in the project._
-
-### Marking Criteria
-
-- Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS;
-- Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS;
-- Masters industry-relevant tools, techniques and expressions in design process and development of websites in accordance with regulations and guidelines for universal design;
-- Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented. -->
-
 ## Contributing
 
 Feel free to suggest improvements and open a pull request if you want to get involved in this project.
