@@ -48,7 +48,7 @@ Feel free to suggest improvements and open a pull request if you want to get inv
 ## Contact
 
 - [My LinkedIn page](https://www.linkedin.com/in/henri-kugler-78218422b/)
-- My personal portfolio (under construction)
+- [My personal portfolio](https://nehguk.github.io)
 
 ## Acknowledgments
 
