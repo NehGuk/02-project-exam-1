@@ -32,17 +32,12 @@ The development of this project consisted of the following steps:
 - [Gantt chart](https://app.instagantt.com/shared/629a7c45f795175173b46d27);
 - [Full report](https://shared-assets.adobe.com/link/c3c0151f-9dce-4dfe-7023-d3d0f8914d1a).
 
-## Grade & Feedback from instructor
-
-Not graded yet.
-
 ## Contributing
 
 Feel free to suggest improvements and open a pull request if you want to get involved in this project.
 
 ## License
 
-- Copyright (c) 2022 Henri Kugler
 - [MIT License](/LICENSE)
 
 ## Acknowledgments
