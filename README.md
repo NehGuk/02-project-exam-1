@@ -45,11 +45,6 @@ Feel free to suggest improvements and open a pull request if you want to get inv
 - Copyright (c) 2022 Henri Kugler
 - [MIT License](/LICENSE)
 
-## Contact
-
-- [My LinkedIn page](https://www.linkedin.com/in/henri-k-78218422b/)
-- [My personal portfolio](https://nehguk.github.io)
-
 ## Acknowledgments
 
 This project uses copyrighted images of my own authorship as well as royalty-free images from [Unsplash](https://unsplash.com).
